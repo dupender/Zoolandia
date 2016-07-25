@@ -2,20 +2,23 @@ using System;
 
 namespace Zoolandia
 {
-    public class Animal
+    public abstract class Animal
     {
-        //constructor, used when instantiating classes
+        //constructor, you have to have a name for an animal, used when instantiating classes
         public Animal (string name)
         {
             this.Name = name;
         }
         public string Name {get; set;}
 
-        //access, return type, Method(parameter type, parameter name)
+        //access, virtual, return type, Method(parameter type, parameter name)
         public virtual string Eat(int numberOfFoodz)
         {
             return "YUM!";
         }
+
+        public int numLegs {get;set;}
+        
     }
 
 }
