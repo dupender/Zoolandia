@@ -1,8 +1,9 @@
 ﻿using System;
 using Zoolandia.Species;
+using Zoolandia.Genus;
 
 
-namespace ConsoleApplication
+namespace Zoolandia
 {
     public class Program
     {
@@ -24,19 +25,23 @@ namespace ConsoleApplication
           Console.WriteLine(redPanda.Name + "says " + response);
 
           AilurusFulgens Joe = new AilurusFulgens("Joe");
-          Console.WriteLine(Joe.Welcome());
+          Console.WriteLine(Joe.Welcome("Joe"));
           Console.WriteLine(Joe.Name.ToLower());
          // Console.ReadLine();  
 
           GalusGalus chicken = new GalusGalus("Mack");
           Console.WriteLine(chicken.Sleep());
           chicken.numLegs = 2;
+          chicken.color = "brown";
           chicken.Name = "Mack";
           Console.WriteLine("chicken has " + chicken.numLegs + " legs");
           Console.WriteLine("My chicken's name is " + chicken.Name);
+          Console.WriteLine("This chicken is" + chicken.color);
 
           HomoSapien human = new HomoSapien("Dhru");
           human.Name = "Dhru";
+          human.canRun = true;
+          if(human.canRun){Console.WriteLine(human.Name + " can run ");};
           Console.WriteLine(human.Name + " is a human");
           Console.WriteLine(human.Hello());
 

@@ -1,8 +1,9 @@
 using System;
+using Zoolandia.Genus;
 
 namespace Zoolandia.Species
 {
-    public class GalusGalus : Animal
+    public class GalusGalus : Galus
     {
         //constructor for RedPanda, string name is like joe, Steve, etc, base name is Animal
         public GalusGalus(string name) : base(name)

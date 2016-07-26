@@ -1,8 +1,9 @@
 using System;
+using Zoolandia.Genus;
 
 namespace Zoolandia.Species
 {
-    public class HomoSapien : Animal
+    public class HomoSapien : Homo
     {
         //constructor for RedPanda, string name is like joe, Steve, etc, base name is Animal
         public HomoSapien(string name) : base(name)

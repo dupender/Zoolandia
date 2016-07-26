@@ -17,6 +17,12 @@ namespace Zoolandia
             return "YUM!";
         }
 
+
+        public virtual string laysEggs(int numOfEggs)
+        {
+            return "I have" + numOfEggs;
+        }
+
         public int numLegs {get;set;}
         
     }
