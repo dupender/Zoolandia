@@ -9,12 +9,18 @@ namespace Zoolandia.Species
         public HomoSapien(string name) : base(name)
         {
             //dont need anything here because the base constructor takes care of it
+            
         }
        public override string Eat(int numberOfFoodz)
        {    
            string animalEat = base.Eat(3); //base calls Animal, your parent class, returns "YUM"
            return animalEat + "Non nom nom";
        } 
+
+       public void walk(string pace)
+       {
+           Console.WriteLine("This human walks slower than a chicken");
+       }
 
        public string Eat(){
            return "I don't know what I just ate, but it was good";
@@ -32,6 +38,11 @@ namespace Zoolandia.Species
        {
            return "Hello, " + this.Name;
        }
+
+       public int husbandry()
+        {
+            return 8;
+        }
     }
 
 }

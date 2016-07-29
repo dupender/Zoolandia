@@ -45,6 +45,18 @@ namespace Zoolandia
           Console.WriteLine(human.Name + " is a human");
           Console.WriteLine(human.Hello());
 
+          
+        Surburbia longIsland = new Surburbia("Long Island");
+        longIsland.inhabitants.Add(human);
+        longIsland.inhabitants.Add(chicken);
+
+         Farm magnolia = new Farm("Magnolia");
+        magnolia.inhabitants.Add(human);
+        magnolia.inhabitants.Add(chicken);  
+        
+      //  Console.WriteLine(Animal.name+ " has a husbandry level of "+ HomoSapien.husbandry);
+        
+
 
         }
     }

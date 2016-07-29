@@ -32,6 +32,11 @@ namespace Zoolandia.Species
        {
            return "Shhhhh " + this.Name + " is sleeping!";
        }
+
+       public int husbandry()
+        {
+            return 2;
+        }
     }
 
 }
